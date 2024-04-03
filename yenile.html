@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+   
+    <title>Kayıt ol</title>
+
+</head>
+<body>
+    <!-- header start -->
+    <header class="header">
+        <section class="flex">
+            <div id="menu-btn" class="fas fa-bars-staggered"></div>
+            <a href="home.html" class="logo">
+                <i class="fas fa-briefcase"></i> İşAra.
+            </a> 
+           
+            
+            <nav class="navbar">
+                <a href="home.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="jobs.html">İş ilanları</a>
+                <a href="contact.html">İletişim</a>
+                <a href="login.html">Giriş Yap</a>
+            </nav>
+            <a href="#" class="btn" style="margin-top: 0;">post jobs</a>
+
+        </section>
+
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
+                <form role="form">
+                    <h2>Şifremi Unuttum</h2>
+                    <p>Ana sayfaya dönmek için <a href="home.html">tıklayınız.</a></p>
+                    <hr>
+    
+                    <div class="form-group">
+                        <input type="email" name="email" id="email" class="form-control input-lg" placeholder="E-posta adresiniz" tabindex="1">
+                    </div>
+    
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12">
+                            <button type="submit" class="btn btn-lg btn-primary btn-block">Şifre sıfırlama isteği gönder</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- header end -->
+    <!-- footer start -->
+    <footer class="footer">
+        <section class="grid">
+            <div class="box">
+                <h3>hızlı linkler</h3>
+                <a href="home.html"><i class="fas fa -angle-right"></i>Anasayfa</a>
+                <a href="about.html"><i class="fas fa -angle-right"></i>About</a>
+                <a href="jobs.html"><i class="fas fa -angle-right"></i>İş ilanları</a>
+                <a href="contact.html"><i class="fas fa -angle-right"></i>İletişim</a>
+                <a href="#"><i class="fas fa -angle-right"></i>Filter Search</a>
+            </div>
+            <div class="box">
+                <h3>Diğer linkler</h3>
+                <a href="#"><i class="fas fa -angle-right"></i>Filter Search</a>
+                <a href="login.html"><i class="fas fa-angle-right"></i>Giriş yap</a>
+                <a href="register.html"><i class="fas fa-angle-right"></i>Register</a>
+                <a href="#"><i class="fas fa-angle-right"></i>Post job</a>
+                <a href="#"><i class="fas fa-angle-right"></i>dashboard</a>
+            </div>
+            <div class="box">
+                <h3>Sosyal Medya Hesaplarımız</h3>
+                <a href="#"><i class="fab fa-facebook-f"></i>facebook</a>
+                <a href="#"><i class="fab fa-x"></i>x</a>
+                <a href="#"><i class="fab fa-instagram"></i>instagram</a>
+                <a href="#"><i class="fab fa-linkedin"></i>linkedin</a>
+                <a href="#"><i class="fab fa-youtube"></i>youtube</a>
+            </div>
+        </section>
+      
+    
+        <div class="credit">&copy; copyright @2024 <span> example</span> all right deserved</div> 
+     </footer>
+    <!-- footer end -->
+    <script>
+            
+        function login() {
+            const email = document.querySelector('input[type="email"]').value;
+            const password = document.querySelector('input[type="password"]').value;
+
+           
+            if (!email || !password) {
+                alert('Please fill in all fields.');
+                return;
+            }
+            console.log('Login successful!'); 
+        }
+        function register() {
+            const firstName = document.querySelector('.input-field[placeholder="First name"]').value;
+            const lastName = document.querySelector('.input-field[placeholder="Last name"]').value;
+            const mobileOrEmail = document.querySelector('.input-field[placeholder="Mobile number or Email"]').value;
+            const newPassword = document.querySelector('.input-field[placeholder="New Password"]').value;
+            const gender = document.querySelector('input[name="gender"]:checked').value;
+            if (!firstName || !lastName || !mobileOrEmail || !newPassword || !gender) {
+                alert('Please fill in all fields.');
+                return;
+            }
+            console.log('Registration successful!'); // Example: Log success message
+        }
+    </script>
+    <script src="js/index.js"> </script>
+    <!-- <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script> -->
+</body>
+</html>
